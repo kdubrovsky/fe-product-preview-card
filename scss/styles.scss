@@ -1,4 +1,5 @@
 @use "colors";
+@import "functions";
 
 body {
     background-color: colors.$cream;
@@ -8,19 +9,19 @@ body {
 
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: rem(14px);
+    line-height: 1.643;
 }
 
 .btn {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 11px;
-    padding: 16px 30px;
+    gap: rem(11px);
+    padding: rem(16px) rem(30px);
     border-radius: 8px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.143;
     color: colors.$white;
     background-color: colors.$dark-cyan;
     cursor: pointer;
@@ -36,18 +37,17 @@ body {
     display: grid;
     overflow: hidden;
     grid-template-columns: 50% 50%;
-    max-width: 600px;
-    min-width: 288px;
+    max-width: rem(600px);
     border-radius: 10px;
     background-color: colors.$white;
-    min-height: 450px;
-    margin: 40px;
+    min-height: rem(450px);
+    margin: rem(40px);
 
-    @media (max-width: 680px) {
-        max-width: 420px;
+    @media (max-width: rem(680px)) {
+        max-width: rem(420px);
         grid-template-columns: 100%;
-        grid-template-rows: 240px auto;
-        margin: 16px;
+        grid-template-rows: rem(240px) auto;
+        margin: rem(16px);
     }
 
     &__image {
@@ -57,74 +57,74 @@ body {
     }
 
     &__wrapper {
-        padding: 32px;
+        padding: rem(32px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        @media (max-width: 680px) {
-            padding: 24px;
+        @media (max-width: rem(680px)) {
+            padding: rem(24px);
         }
     }
 
     &__category {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: rem(12px);
+        line-height: 1.25;
         font-weight: 500;
-        letter-spacing: 5px;
+        letter-spacing: 0.4167em;
         text-transform: uppercase;
         color: colors.$dark-grayish-blue;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
-        @media (max-width: 680px) {
-            margin-bottom: 12px;
+        @media (max-width: rem(680px)) {
+            margin-bottom: rem(12px);
         }
     }
 
     &__title {
         font-family: "Fraunces", serif;
-        font-size: 32px;
+        font-size: rem(32px);
         line-height: 1;
         color: colors.$dark-blue;
-        margin-bottom: 24px;
+        margin-bottom: rem(24px);
 
-        @media (max-width: 680px) {
-            margin-bottom: 16px;
+        @media (max-width: rem(680px)) {
+            margin-bottom: rem(16px);
         }
     }
 
     &__description {
         color: colors.$dark-grayish-blue;
-        margin-bottom: 29px;
+        margin-bottom: rem(29px);
 
-        @media (max-width: 680px) {
-            margin-bottom: 24px;
+        @media (max-width: rem(680px)) {
+            margin-bottom: rem(24px);
         }
     }
 
     &__prices {
         display: flex;
         align-items: center;
-        gap: 19px;
-        margin-bottom: 30px;
+        gap: rem(19px);
+        margin-bottom: rem(30px);
         flex-wrap: wrap;
 
-        @media (max-width: 680px) {
-            margin-bottom: 20px;
+        @media (max-width: rem(680px)) {
+            margin-bottom: rem(20px);
         }
     }
 
     &__actual-price {
         font-family: "Fraunces", serif;
-        font-size: 32px;
+        font-size: rem(32px);
         line-height: 1;
         text-decoration: none;
         color: colors.$dark-cyan;
     }
 
     &__old-price {
-        font-size: 13px;
-        line-height: 23px;
+        font-size: rem(13px);
+        line-height: 1.769;
         color: colors.$dark-grayish-blue;
     }
 }
