@@ -1,1 +1,95 @@
 @use "colors";
+
+body {
+    background-color: colors.$cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 11px;
+    padding: 16px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    line-height: 16px;
+    color: colors.$white;
+    background-color: colors.$dark-cyan;
+    cursor: pointer;
+
+    &:hover {
+        background-color: colors.$dark-cyan-hover;
+    }
+
+    align-self: end;
+}
+
+.preview-card {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    border-radius: 10px;
+    background-color: colors.$white;
+    min-height: 450px;
+
+    &__wrapper {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__category {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: colors.$dark-grayish-blue;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: "Fraunces", serif;
+
+        font-size: 32px;
+        line-height: 1;
+        color: colors.$dark-blue;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        color: colors.$dark-grayish-blue;
+        margin-bottom: 29px;
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &__actual-price {
+        font-family: "Fraunces", serif;
+        font-size: 32px;
+        line-height: 1;
+        text-decoration: none;
+        color: colors.$dark-cyan;
+    }
+
+    &__old-price {
+        font-size: 13px;
+        line-height: 23px;
+        color: colors.$dark-grayish-blue;
+    }
+}
