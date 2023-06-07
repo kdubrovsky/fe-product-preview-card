@@ -19,8 +19,12 @@
 <body>
 
     <div class="preview-card">
-        <img class="preview-card__image" src="./public/images/image-product-desktop.jpg"
-            alt="Gabrielle Essence Eau De Parfum">
+        <picture>
+            <source srcset="images/image-product-mobile.jpg" media="(max-width: 680px)">
+            <img class="preview-card__image" src="images/image-product-desktop.jpg"
+                alt="Gabrielle Essence Eau De Parfum">
+        </picture>
+
         <div class="preview-card__wrapper">
             <div class="preview-card__info">
                 <h2 class="preview-card__category">
@@ -49,7 +53,6 @@
                         fill="currentColor" />
                 </svg>Add to Cart</button>
         </div>
-    </div>
     </div>
 
 </body>
