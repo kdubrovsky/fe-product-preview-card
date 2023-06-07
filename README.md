@@ -11,4 +11,5 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - SCSS
 - Flexbox
 - CSS Grid
+- Relative font sizes and dimensions
 - [Vite](https://vitejs.dev/) Tooling
