@@ -48,7 +48,6 @@ body {
         grid-template-columns: 100%;
         grid-template-rows: 240px auto;
         margin: 16px;
-        
     }
 
     &__image {
@@ -108,6 +107,7 @@ body {
         align-items: center;
         gap: 19px;
         margin-bottom: 30px;
+        flex-wrap: wrap;
 
         @media (max-width: 680px) {
             margin-bottom: 20px;
